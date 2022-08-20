@@ -1,60 +1,73 @@
 toggleMenu:
-    other: メニューを開く・閉じる
+    other: Toggle Menu
 
 darkMode:
-    other: ダークモード
+    other: Dark Mode
+
+list:
+    page:
+        one: "{{ .Count }} page"
+        other: "{{ .Count }} pages"
+
+    section:
+        other: Section
+
+    subsection:
+        one: Subsection
+        other: Subsections
 
 article:
     back:
-        other: 前のページ
+        other: Back
 
     tableOfContents:
-        other: 目次
+        other: Table of contents
 
     relatedContent:
-        other: 関連するコンテンツ
+        other: Related content
 
     lastUpdatedOn:
-        other: 最終更新
+        other: Last updated on
 
     readingTime:
-        other: "読了時間: {{ .Count }}分"
+        one: "{{ .Count }} minute read"
+        other: "{{ .Count }} minute read"
 
 notFound:
     title:
-        other: 404 Not Found
+        other: Not Found
+
     subtitle:
-        other: 指定されたページは存在しません。
+        other: This page does not exist
 
 widget:
     archives:
         title:
-            other: アーカイブ
+            other: Archives
 
         more:
-            other: さらに見る
+            other: More
 
     tagCloud:
         title:
-            other: タグ
-
+            other: Tags
     categoriesCloud:
         title:
-            other: カテゴリ
+            other: Categories
 
 search:
     title:
-        other: 検索
+        other: Search
 
     placeholder:
-        other: 入力...
+        other: Type something...
 
     resultTitle:
-        other: "#PAGES_COUNT 件 （#TIME_SECONDS 秒）"
+        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
 
 footer:
     builtWith:
         other: Built with {{ .Generator }}
 
     designedBy:
-        other: テーマ {{ .Theme }} は {{ .DesignedBy }} によって設計されています。
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
